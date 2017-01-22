@@ -17,3 +17,7 @@ alias artisan='php artisan'
 alias g='git'
 alias gs='git status'
 alias gc='git commit'
+
+# docker
+alias d='docker'
+alias dc='docker-compose'
