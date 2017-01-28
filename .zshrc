@@ -14,7 +14,7 @@ compinit -u
 export FIGNORE=${FIGNORE}:.class:.DS_Store
 
 # read zsh files
-DOT_FILES=('alias' 'function' 'sub-alias' 'history')
+DOT_FILES=('alias' 'function' 'history' 'extends')
 for file in ${DOT_FILES[@]}
 do
     if [ -f "$HOME/.zsh/$file.zsh" ]; then

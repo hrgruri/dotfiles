@@ -2,7 +2,7 @@
 DOT_FILES=(.vimrc .vim .zsh .zshrc)
 for file in ${DOT_FILES[@]}
 do
-    ln -sf $HOME/dotfiles/$file $HOME/$file
+    ln -sf $HOME/.dotfiles/$file $HOME/$file
 done
 
 # for vim
