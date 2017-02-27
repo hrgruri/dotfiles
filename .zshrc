@@ -4,8 +4,11 @@ bindkey "^[[3~" delete-char
 autoload -Uz colors
 zstyle ':completion:*' matcher-list 'm:{a-z}={A-Z}'
 
-if [ -f /usr/local/share/zsh-completions ]; then
+if [ -e /usr/local/share/zsh-completions ]; then
     fpath=(/usr/local/share/zsh-completions $fpath)
+fi
+if [ -e "$HOME/.zsh/completions" ]; then
+    fpath=("$HOME/.zsh/completions" $fpath)
 fi
 autoload -U compinit
 compinit -u

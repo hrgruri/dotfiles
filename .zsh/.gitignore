@@ -1,2 +1,3 @@
 extends.zsh
 prompt.zsh
+completions

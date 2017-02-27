@@ -10,3 +10,7 @@ mkdir -p ~/.cache/dein
 mkdir -p ~/.vim/dein/repos/github.com/Shougo
 curl https://raw.githubusercontent.com/Shougo/dein.vim/master/bin/installer.sh > ~/.cache/dein/installer.sh
 sh ~/.cache/dein/installer.sh ~/.vim/dein
+
+# docker
+mkdir -p ~/.zsh/completions
+curl -L https://raw.githubusercontent.com/docker/compose/$(docker-compose version --short)/contrib/completion/zsh/_docker-compose > ~/.zsh/completions/_docker-compose
