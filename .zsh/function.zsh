@@ -1,6 +1,6 @@
 function gcgh()
 {
-    git clone github:hrgruri/$1
+    git clone github:taniko/$1
 }
 
 function gcbb()
