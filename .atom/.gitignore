@@ -1,0 +1,7 @@
+*
+!.gitignore
+!init.coffee
+!keymap.cson
+!package-deps-state.json
+!snippets.cson
+!styles.less
