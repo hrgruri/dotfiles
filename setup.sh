@@ -16,5 +16,4 @@ mkdir -p ~/.zsh/completions
 curl -L https://raw.githubusercontent.com/docker/compose/$(docker-compose version --short)/contrib/completion/zsh/_docker-compose > ~/.zsh/completions/_docker-compose
 
 # git
-ln -s $HOME/.dotfiles/git/.gitignore_global $HOME/.gitignore_global
 ln -s $HOME/.dotfiles/git/.gitconfig $HOME/.gitconfig
