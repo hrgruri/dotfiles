@@ -17,6 +17,7 @@ call dein#add('scrooloose/nerdtree')
 call dein#add('w0ng/vim-hybrid')
 call dein#add('Shougo/neocomplete.vim')
 call dein#add('Shougo/neosnippet.vim')
+call dein#add('tiagofumo/vim-nerdtree-syntax-highlight')
 call dein#end()
 if dein#check_install()
     call dein#install()
@@ -25,3 +26,12 @@ endif
 syntax on
 runtime! autoload/init/*.vim
 runtime! autoload/plugin/*.vim
+
+" map
+map <C-n> :NERDTreeToggle<CR>
+
+" NERDTree
+let NERDTreeIgnore = ['\.git$', '\.DS_Store$']
+let NERDTreeShowHidden = 1
+autocmd VimEnter * if !argc() | NERDTree | endif
+autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif

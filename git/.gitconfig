@@ -3,6 +3,17 @@
     path = ~/.dotfiles/git/alias.gitconfig
 
 [core]
-    excludesfile = ~/.dotfiles/git/.gitignore_global
+	excludesfile = /Users/aratani/.dotfiles/git/.gitignore_global
     editor = vim
     ignorecase = false
+[user]
+	name = Yuya Aratani
+	email = hrgruri@gmail.com
+[difftool "sourcetree"]
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	path = 
+[mergetool "sourcetree"]
+	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	trustExitCode = true
+[commit]
+	template = /Users/aratani/.stCommitMsg
