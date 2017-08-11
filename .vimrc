@@ -31,7 +31,7 @@ runtime! autoload/plugin/*.vim
 map <C-n> :NERDTreeToggle<CR>
 
 " NERDTree
-let NERDTreeIgnore = ['\.git$', '\.DS_Store$']
+let NERDTreeIgnore = ['\.git$', '\.DS_Store$', '\.idea$']
 let NERDTreeShowHidden = 1
 autocmd VimEnter * if !argc() | NERDTree | endif
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
