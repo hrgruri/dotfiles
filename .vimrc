@@ -29,6 +29,7 @@ runtime! autoload/plugin/*.vim
 
 " map
 map <C-n> :NERDTreeToggle<CR>
+nnoremap <ESC><ESC> :noh<CR>
 
 " NERDTree
 let NERDTreeIgnore = ['\.git$', '\.DS_Store$', '\.idea$']
