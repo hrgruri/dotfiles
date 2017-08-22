@@ -18,6 +18,7 @@ call dein#add('w0ng/vim-hybrid')
 call dein#add('Shougo/neocomplete.vim')
 call dein#add('Shougo/neosnippet.vim')
 call dein#add('tiagofumo/vim-nerdtree-syntax-highlight')
+call dein#add('soramugi/auto-ctags.vim')
 call dein#end()
 if dein#check_install()
     call dein#install()
@@ -36,3 +37,11 @@ let NERDTreeIgnore = ['\.git$', '\.DS_Store$', '\.idea$']
 let NERDTreeShowHidden = 1
 autocmd VimEnter * if !argc() | NERDTree | endif
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
+
+" neocomplete
+let g:neocomplete#enable_at_startup = 1
+let g:neocomplete#max_list = 50
+let g:neocomplete#max_keyword_width = 80
+
+" auto-ctags
+let g:auto_ctags = 1
