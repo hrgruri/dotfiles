@@ -43,5 +43,6 @@ let g:neocomplete#enable_at_startup = 1
 let g:neocomplete#max_list = 50
 let g:neocomplete#max_keyword_width = 80
 
-" auto-ctags
+" ctags
 let g:auto_ctags = 1
+nnoremap <C-]> g<C-]>
