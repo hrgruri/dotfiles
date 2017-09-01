@@ -14,6 +14,7 @@ call dein#add('Townk/vim-autoclose')
 call dein#add('nathanaelkane/vim-indent-guides')
 call dein#add('vim-scripts/PDV--phpDocumentor-for-Vim')
 call dein#add('scrooloose/nerdtree')
+call dein#add('jistr/vim-nerdtree-tabs')
 call dein#add('w0ng/vim-hybrid')
 call dein#add('Shougo/neocomplete.vim')
 call dein#add('Shougo/neosnippet.vim')
@@ -28,14 +29,15 @@ syntax on
 runtime! autoload/init/*.vim
 runtime! autoload/plugin/*.vim
 
-" map
-map <C-n> :NERDTreeToggle<CR>
+let mapleader = "\<Space>"
+map <Leader>n <plug>NERDTreeTabsToggle<CR>
 nnoremap <ESC><ESC> :noh<CR>
 
 " NERDTree
 let NERDTreeIgnore = ['\.git$', '\.DS_Store$', '\.idea$']
 let NERDTreeShowHidden = 1
-autocmd VimEnter * if !argc() | NERDTree | endif
+autocmd VimEnter * if !argc() | execute 'NERDTreeTabsOpen' | endif
+" let g:nerdtree_tabs_open_on_console_startup=1
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 
 " neocomplete
