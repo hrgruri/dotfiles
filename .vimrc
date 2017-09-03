@@ -33,6 +33,13 @@ let mapleader = "\<Space>"
 map <Leader>n <plug>NERDTreeTabsToggle<CR>
 nnoremap <ESC><ESC> :noh<CR>
 
+nnoremap <Leader>o gT
+nnoremap <Leader>p gt
+nnoremap <Leader><Left> <C-w>h
+nnoremap <Leader><Down> <C-w>j
+nnoremap <Leader><Up> <C-w>k
+nnoremap <Leader><Right> <C-w>l
+
 " NERDTree
 let NERDTreeIgnore = ['\.git$', '\.DS_Store$', '\.idea$']
 let NERDTreeShowHidden = 1
@@ -47,4 +54,5 @@ let g:neocomplete#max_keyword_width = 80
 
 " ctags
 let g:auto_ctags = 1
-nnoremap <C-]> g<C-]>
+nnoremap <Leader>] g<C-]>
+nnoremap <Leader>t <C-t>
