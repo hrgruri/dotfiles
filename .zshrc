@@ -4,6 +4,10 @@ bindkey "^[[3~" delete-char
 autoload -Uz colors
 zstyle ':completion:*' matcher-list 'm:{a-z}={A-Z}'
 
+# alias
+alias ll='ls -la'
+alias la='ls -a'
+
 if [ -e /usr/local/share/zsh-completions ]; then
     fpath=(/usr/local/share/zsh-completions $fpath)
 fi

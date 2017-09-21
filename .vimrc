@@ -39,6 +39,8 @@ nnoremap <Leader><Left> <C-w>h
 nnoremap <Leader><Down> <C-w>j
 nnoremap <Leader><Up> <C-w>k
 nnoremap <Leader><Right> <C-w>l
+nnoremap <Leader>h <C-w>h
+nnoremap <Leader>l <C-w>l
 
 " NERDTree
 let NERDTreeIgnore = ['\.git$', '\.DS_Store$', '\.idea$']
