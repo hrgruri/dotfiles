@@ -55,6 +55,5 @@ let g:neocomplete#max_list = 50
 let g:neocomplete#max_keyword_width = 80
 
 " ctags
-let g:auto_ctags = 1
 nnoremap <Leader>] g<C-]>
 nnoremap <Leader>t <C-t>
