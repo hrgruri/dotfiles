@@ -20,6 +20,7 @@ call dein#add('Shougo/neocomplete.vim')
 call dein#add('Shougo/neosnippet.vim')
 call dein#add('tiagofumo/vim-nerdtree-syntax-highlight')
 call dein#add('soramugi/auto-ctags.vim')
+call dein#add('leafgarland/typescript-vim')
 call dein#end()
 if dein#check_install()
     call dein#install()
@@ -55,5 +56,6 @@ let g:neocomplete#max_list = 50
 let g:neocomplete#max_keyword_width = 80
 
 " ctags
+let g:auto_ctags = 1
 nnoremap <Leader>] g<C-]>
 nnoremap <Leader>t <C-t>
