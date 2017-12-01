@@ -3,7 +3,7 @@
     path = ~/.dotfiles/git/alias.gitconfig
 
 [core]
-	excludesfile = /Users/aratani/.dotfiles/git/.gitignore_global
+	excludesfile = ~/.dotfiles/git/.gitignore_global
     editor = vim
     ignorecase = false
 [user]
