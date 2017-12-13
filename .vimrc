@@ -1,3 +1,5 @@
+let $DOTVIM = $HOME . '/.vim'
+
 set number
 set tabstop=4
 set expandtab
@@ -54,6 +56,14 @@ autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isT
 let g:neocomplete#enable_at_startup = 1
 let g:neocomplete#max_list = 50
 let g:neocomplete#max_keyword_width = 80
+let g:neocomplete#enable_smart_case = 1
+let g:neocomplete#lock_iminsert = 1
+let g:neocomplete#auto_completion_start_length = 1
+let g:neocomplcache_enable_underbar_completion = 1
+let g:neocomplete#sources#dictionary#dictionaries = {
+    \ 'default' : '',
+    \ 'php' : $DOTVIM.'/dict/php.dict'
+    \ }
 
 " ctags
 let g:auto_ctags = 1
