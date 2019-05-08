@@ -21,7 +21,6 @@ call dein#add('w0ng/vim-hybrid')
 call dein#add('Shougo/neocomplete.vim')
 call dein#add('Shougo/neosnippet.vim')
 call dein#add('tiagofumo/vim-nerdtree-syntax-highlight')
-call dein#add('soramugi/auto-ctags.vim')
 call dein#add('leafgarland/typescript-vim')
 call dein#end()
 if dein#check_install()
@@ -65,7 +64,5 @@ let g:neocomplete#sources#dictionary#dictionaries = {
     \ 'php' : $DOTVIM.'/dict/php.dict'
     \ }
 
-" ctags
-let g:auto_ctags = 1
 nnoremap <Leader>] g<C-]>
 nnoremap <Leader>t <C-t>
